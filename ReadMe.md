@@ -10,3 +10,11 @@ git fatal: destination path ‘/test’ already exists and is not an empty direc
 ————————————————
 版权声明：本文为CSDN博主「小橙橙OUOU」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
 原文链接：https://blog.csdn.net/qq_39992056/article/details/85217609
+
+下面是一些.gitignore文件忽略的匹配规则：
+
+*.a       # 忽略所有 .a 结尾的文件
+!lib.a    # 但 lib.a 除外
+/TODO     # 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO
+build/    # 忽略 build/ 目录下的所有文件
+doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt

@@ -1,6 +1,14 @@
 # Created by .ignore support plugin (hsz.mobi)
-.gitignore
+.gitignore/
+target/
+.idea/
 src/main/resources/
 src/test/
-target/
-/.idea/
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
