@@ -18,3 +18,16 @@ git fatal: destination path ‘/test’ already exists and is not an empty direc
 /TODO     # 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO
 build/    # 忽略 build/ 目录下的所有文件
 doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
+
+.gitignore只能忽略那些原来没有被track的文件，如果某些文件已经被纳入了版本管理中，则修改.gitignore是无效的。那么解决方法就是先把本地缓存删除（改变成未track状态），然后再提交：
+输入：
+git rm -r –cached filePath
+git commit -m “remove xx”
+或者：
+git rm -r -–cached .
+git add .
+git commit -m “update .gitignore”
+git push origin master
+
+编译:javac XXX.java
+反编:javap XXX.class
