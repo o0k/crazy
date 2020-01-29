@@ -4,7 +4,7 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
-public class ProxyTest {
+public class ProxyTest2 {
     public static void main(String[] args) {
 
         Lenovo lenovo = new Lenovo();
@@ -42,23 +42,42 @@ public class ProxyTest {
             @Override
             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
                 System.out.println("该代理逻辑, 执行了-->>>>");
-                String name = method.getName();
-                System.out.println("name:" + name + " ()");
-                System.out.println("args[0]:" + args[0]);
-                return null;
+
+                // 判断是否是sale方法
+                if (method.getName().equals("sale")) {
+                    double money = (double) args[0];
+                    // 1.增强参数
+                    money = money * 0.85;
+                    // 2.增强逻辑体
+                    System.out.println("================逻辑体增强==S==============");
+                    System.out.println("专车接送, 嘟嘟...");
+                    // 使用真实对象,调用该方法
+                    String result = (String) method.invoke(lenovo, money, 2); // 真正的方法操作是这句话,
+                    System.out.println("免费安装..");
+                    System.out.println("================逻辑体增强==E==============");
+                    // 3.增强返回值
+                    return result + ", 并送鼠标垫.";
+                } else {
+                    // 使用真实对象,调用该方法
+                    Object result = method.invoke(lenovo, args);
+                    return result;
+                }
             }
         });
 
 
         // 代理对象,调用
         String computer = proxy_lenovo.sale(8000, 3);
-
-        proxy_lenovo.show("Mac Air");
+        System.out.println(computer);
+        //
+        System.out.println();
+        System.out.println("普通调用: ");
+                proxy_lenovo.show("Mac Air");
 
 
         // 真实对象,调用
-//        String sale = lenovo.sale(8000);
+        //        String sale = lenovo.sale(8000);
 
-//        System.out.println(sale);
+        //        System.out.println(sale);
     }
 }
