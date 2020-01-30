@@ -1,0 +1,12 @@
+windows 和 linux 常用命令
+
+dir = ls
+mkdir /md:创建文件夹
+.:当前目录
+..:上一级目录
+/:根目录
+
+>javac -d F:/javac Crazy.java
+>javac -d . User.java
+zhp
+
