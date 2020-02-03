@@ -1,6 +1,6 @@
 package cn.zhp.thread.chatroom;
 
-import com.geekbang.chatroom.client.ChatRoomClient;
+import cn.zhp.thread.chatroom.client.ChatRoomClient;
 
 import java.io.IOException;
 

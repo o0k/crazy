@@ -1,7 +1,12 @@
 package cn.zhp.thread.learnthread3;
 
+/**
+ * 同步:synchronized
+ *
+ */
 public class DataHolder {
 
+    // 任何一个对象,都可以做锁,不是null就可以
     private Object lockObj = new Object();
 
     private long number = 0;

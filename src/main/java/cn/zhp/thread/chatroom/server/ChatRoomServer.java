@@ -1,7 +1,7 @@
 package cn.zhp.thread.chatroom.server;
 
-import com.geekbang.chatroom.common.ChatMessage;
-import com.geekbang.chatroom.common.DataExchange;
+import cn.zhp.thread.chatroom.common.ChatMessage;
+import cn.zhp.thread.chatroom.common.DataExchange;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -11,8 +11,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import static com.geekbang.chatroom.common.Constants.*;
-import static com.geekbang.chatroom.common.Utils.isValidUserName;
+import static cn.zhp.thread.chatroom.common.Constants.*;
+import static cn.zhp.thread.chatroom.common.Utils.isValidUserName;
 
 public class ChatRoomServer {
 

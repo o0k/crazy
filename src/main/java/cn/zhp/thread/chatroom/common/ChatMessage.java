@@ -2,8 +2,8 @@ package cn.zhp.thread.chatroom.common;
 
 import java.util.Objects;
 
-import static com.geekbang.chatroom.common.Constants.MESSAGE_BREAK;
-import static com.geekbang.chatroom.common.Constants.MESSAGE_SEP;
+import static cn.zhp.thread.chatroom.common.Constants.MESSAGE_BREAK;
+import static cn.zhp.thread.chatroom.common.Constants.MESSAGE_SEP;
 
 public class ChatMessage {
 

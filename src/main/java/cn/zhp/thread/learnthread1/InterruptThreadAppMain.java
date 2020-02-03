@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * daemon thread:守护线程,为其他线程服务的线程
+ */
 public class InterruptThreadAppMain {
 
     private static final String TEXT = "太阳在这个平静的小村庄缓缓升起，又是开始了平常的一天。我们故事的主人公睡眼惺忪的起来\n" +
@@ -25,6 +28,7 @@ public class InterruptThreadAppMain {
             threads.add(thread);
         }
 
+        // 时间单位转换
         Thread.sleep(TimeUnit.SECONDS.toMillis(5));
 
         System.out.println();
@@ -32,7 +36,7 @@ public class InterruptThreadAppMain {
 
         // TODO interrupt 一个标识，需要thread里执行的代码自己去检查。
         // TODO 如果线程不是在sleep，或者执行一些确实处理这个状态的方法，那么调用interrupt没有任何作用
-        threads.forEach(Thread::interrupt);
+        threads.forEach(Thread::interrupt);// TODO
 
         System.out.println("interrupt 线程结束，继续sleep 五秒钟");
 

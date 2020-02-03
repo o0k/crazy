@@ -3,7 +3,7 @@ package cn.zhp.thread.chatroom.common;
 import java.io.*;
 import java.net.Socket;
 
-import static com.geekbang.chatroom.common.Constants.DEFAULT_CHARSET;
+import static cn.zhp.thread.chatroom.common.Constants.DEFAULT_CHARSET;
 
 // TODO 增加心跳功能，server和client互相发送心跳消息，过一段时间不发送，则认为网络连接已经断开，释放资源，更新在线用户
 public class DataExchange {

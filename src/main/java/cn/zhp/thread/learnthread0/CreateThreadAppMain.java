@@ -11,7 +11,7 @@ public class CreateThreadAppMain {
         System.out.println("程序开始，执行的线程名字叫做" + Thread.currentThread().getName());
 
         // TODO 改成2试试看？
-        for (int i = 1; i <= 1; i++) {
+        for (int i = 1; i <= 2; i++) {
             // TODO 学习创建线程的方法
             // TODO Runnable接口里的run是线程执行的方法，执行完毕，线程就结束了
             // TODO 理解代码是在线程里被执行的，同样的代码可以被多个线程执行。

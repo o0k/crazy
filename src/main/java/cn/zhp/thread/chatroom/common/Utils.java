@@ -1,6 +1,6 @@
 package cn.zhp.thread.chatroom.common;
 
-import static com.geekbang.chatroom.common.Constants.*;
+import static cn.zhp.thread.chatroom.common.Constants.*;
 
 public class Utils {
 

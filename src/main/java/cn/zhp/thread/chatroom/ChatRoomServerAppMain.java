@@ -1,10 +1,10 @@
 package cn.zhp.thread.chatroom;
 
-import com.geekbang.chatroom.server.ChatRoomServer;
+import cn.zhp.thread.chatroom.server.ChatRoomServer;
 
 import java.io.IOException;
 
-import static com.geekbang.chatroom.common.Constants.SERVER_PORT;
+import static cn.zhp.thread.chatroom.common.Constants.SERVER_PORT;
 
 public class ChatRoomServerAppMain {
     public static void main(String[] args) throws IOException {
