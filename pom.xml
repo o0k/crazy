@@ -14,6 +14,12 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+        <!--为了引入StringUtils-->
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
     </dependencies>
 
 
