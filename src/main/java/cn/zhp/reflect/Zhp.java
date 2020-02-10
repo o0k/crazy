@@ -19,6 +19,13 @@ public class Zhp {
         AnnotatedType annotatedReturnType = zhp.method.getAnnotatedReturnType();
         System.out.println(annotatedReturnType);
 
+        Object o = new Object();
+        Class<?> aClass = o.getClass();
+
+        zhp.method.getAnnotatedReturnType().getType();
+
+//        invoke??????????????????
+
 
 
         Type t = zhp.method.getAnnotatedReturnType().getType();
