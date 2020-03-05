@@ -1,10 +1,13 @@
 package cn.zhp.map;
 
+import org.mybatis.spring.annotation.MapperScan;
+
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+@MapperScan
 public class MapTst {
     public static void main(String[] args) {
 
