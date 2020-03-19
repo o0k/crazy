@@ -8,7 +8,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 @MapperScan
-public class MapTst {
+public class MapIterator {
     public static void main(String[] args) {
 
         Map<String, Object> map = new HashMap<>();

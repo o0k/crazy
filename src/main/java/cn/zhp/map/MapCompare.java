@@ -2,6 +2,9 @@ package cn.zhp.map;
 
 import java.util.*;
 
+/**
+ * zhao
+ */
 public class MapCompare {
     public static boolean isNull(Object obj) {
         return obj == null;

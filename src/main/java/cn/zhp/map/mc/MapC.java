@@ -1,5 +1,7 @@
 package cn.zhp.map.mc;
 
+import cn.zhp.json.JacksonUtil;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -62,6 +64,14 @@ public class MapC {
         mapA.put(zo1,dateVal1);
         mapA.put(zo2,dateVal2);
         mapA.put("key",list);
+
+        System.out.println(JacksonUtil.obj2json(mapA));
+
+        Date date = (Date) mapA.get(zo1);
+
+        System.out.println(sdf.format(date));
+
+
 
 
 
