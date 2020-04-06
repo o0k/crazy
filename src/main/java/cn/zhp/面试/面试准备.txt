@@ -1,0 +1,10 @@
+sql优化:
+1.避免全局扫描,在where及order by 涉及的列上建立索引
+2.劲量避免where字句中使用!= 或 <>,否则引擎放弃使用索引而进行全表扫描
+3.where字句避免使用or
+4.in 和 not in也要慎用
+5.应尽量避免在 where 子句中对字段进行表达式操作，这将导致引擎放弃使用索引而进行全表扫描。如：
+  select id from t where num/2=100
+  应改为:
+  select id from t where num=100*2
+6.避免在where子句中对字段进行函数操作
