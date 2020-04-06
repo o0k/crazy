@@ -1,0 +1,14 @@
+1.源代码阶段
+2.Class类对象阶段
+把class文件加载到内存,
+    Class类对象:
+        成员变量:Field[] fields
+        构造方法:Constructor[] cons
+        成员方法:Method[] methods
+3.Runtime运行时阶段
+
+
+//============================
+1.Class.forName("全类名");
+2.类名.class
+3.对象.getClass()
