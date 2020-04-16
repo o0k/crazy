@@ -51,8 +51,6 @@ public class ReflectDemo2 {
         Package aPackage = personClass.getPackage();
         System.out.println(aPackage);
 
-
-
-
+        // 获取构造方法
     }
 }

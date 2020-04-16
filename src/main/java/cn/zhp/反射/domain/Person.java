@@ -1,6 +1,14 @@
 package cn.zhp.反射.domain;
 
 public class Person {
+
+    public void eat() {
+        System.out.println("吃货!!!");
+    }
+    public void eat(String food) {
+        System.out.println("吃货!!! 吃" + food);
+    }
+
     private String name;
     private int age;
 
