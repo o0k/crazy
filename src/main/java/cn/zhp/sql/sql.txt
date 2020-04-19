@@ -1,0 +1,2 @@
+1.inner join 等同 join；
+2.
